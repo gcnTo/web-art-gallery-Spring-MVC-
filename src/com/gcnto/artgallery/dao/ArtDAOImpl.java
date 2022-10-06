@@ -27,12 +27,6 @@ public class ArtDAOImpl implements ArtDAO {
 
 		List<Art> artList = queryArt.getResultList();
 		
-		for (Art a : artList) {
-			
-			System.out.println(a.getReviewList());
-			
-		}
-
 		return artList;
 	}
 
