@@ -17,7 +17,7 @@ import javax.persistence.Table;
 @Table(name = "art")
 public class Art {
 	
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn(name = "art_id")
 	private List<Review> reviewList;
 	
