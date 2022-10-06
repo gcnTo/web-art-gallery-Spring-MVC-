@@ -26,20 +26,14 @@ public class ArtController {
 		List<Art> artList = artDAO.accessArtList();
 		
 		for (Art art : artList) {
-			
-			
-			if (title.equals(art.getTitle())) {
-				
+
+			if (title.equals(art.getTitle())) {	
 				model.addAttribute("art", art);
-				
-			}
-			
+			}	
 		}
 
 		return "art";
 		
 	}
-	
-	
 
 }
